@@ -224,8 +224,12 @@
   <div class="final-section">
     <div id="finalMessage" class="final-message">❌ نفّذ الخطوات أولاً لكي يتم فتح روابط التحميل</div>
     <div class="final-buttons">
-      <a id="btnDownload" href="#" onclick="goToDownload(); return false;">🔒 اضغط هنا لتحميل لعبة روبلوكس مهكرة اخر اصدار</a>
+      <a id="btnDownload" href="#" onclick="goToDownload(); return false;">🔒 اضغط هنا لتحميل لعبة روبلوكس مهكرة اخر اصدار وللحصول علي روبوكس مجاني</a>
+
+      <!-- 
       <a id="btnRobux" href="#" onclick="goToRobux(); return false;">🔒 اضغط هنا لمعرفة طريقة الحصول علي روبوكس مجاني</a>
+      -->
+
     </div>
   </div>
 
@@ -234,7 +238,6 @@ const STEP_EXPIRY_MS = 365 * 24 * 60 * 60 * 1000; // سنة كاملة
     const step3Links = [
       "https://youtu.be/CYzCkO2faCI?si=dxjNGLWa1ZTBoUuO",
       "https://youtu.be/FvKaH1O5p2A?si=fzpm_APuoR0k85iL",
-      "https://youtu.be/HT505S5e6OA?si=qSCthgAp7Di4MtFV",
       "https://youtu.be/2NUIqCo9GsA?si=5B9x7PGkoVw49qqE",
       "https://youtu.be/tRfwoy1EnTA?si=R2KtVKde3LmHgYRW"
     ];
@@ -314,13 +317,22 @@ const STEP_EXPIRY_MS = 365 * 24 * 60 * 60 * 1000; // سنة كاملة
         document.getElementById('finalMessage').style.color = 'lime';
 
         const btnDownload = document.getElementById('btnDownload');
+
+        /*
         const btnRobux = document.getElementById('btnRobux');
+        */
 
         btnDownload.classList.add('active');
-        btnRobux.classList.add('active');
 
-        btnDownload.innerText = '🔓 اضغط هنا لتحميل لعبة روبلوكس مهكرة اخر اصدار';
+        /*
+        btnRobux.classList.add('active');
+        */
+
+        btnDownload.innerText = '🔓 اضغط هنا لتحميل لعبة روبلوكس مهكرة اخر اصدار وللحصول علي روبوكس مجاني';
+
+        /*
         btnRobux.innerText = '🔓 اضغط هنا لمعرفة طريقة الحصول علي روبوكس مجاني';
+        */
       }
     }
 
@@ -339,9 +351,12 @@ const STEP_EXPIRY_MS = 365 * 24 * 60 * 60 * 1000; // سنة كاملة
       window.open('https://shr2.link/AmjZ4Z', '_blank');
     }
 
+    /*
     function goToRobux() {
       window.open('https://mrgamesff.blogspot.com/2025/06/blog-post_21.html', '_blank');
     }
+    */
+
   </script>
 
 </body>
